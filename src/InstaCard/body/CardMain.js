@@ -1,20 +1,18 @@
-import React from 'react'
-import Icons from '../body/Icons';
-import LikeCounts from '../body/LikeCounts';
-import Comments from '../body/Comments';
-import PostDate from '../body/PostDate';
-import CommentBox from '../body/CommentBox';
+import React from 'react';
+import CardIcons from './CardIcons';
+import Comments from './Comments';
+import CommentBox from './CommentBox';
 
-const CardMain = () => {
-    return (
-        <section className="card-main">
-            <Icons />
-            <LikeCounts />
-            <Comments />
-            <PostDate />
-            <CommentBox />
-        </section>
-    )
+function CardMain() {
+  return (
+    <section className="card-main">
+      <CardIcons />
+      <div className="like-counts">100 likes</div>
+      <Comments />
+      <div className="post-date">1日前</div>
+      <CommentBox />
+    </section>
+  )
 }
 
 export default CardMain;
