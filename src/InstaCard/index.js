@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../index.css';
 import CardHead from './Header';
-import CardBody from './body/CardBody';
+import CardBody from './body/index';
 import * as serviceWorker from '../serviceWorker';
 
 const InstaCard = () => {
